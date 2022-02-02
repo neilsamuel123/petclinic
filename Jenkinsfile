@@ -6,6 +6,7 @@ pipeline {
                         sh 'pwd'
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
+		    	sh 'pwd'
                         sh 'pwd'
                         sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic'
               			
